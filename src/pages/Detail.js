@@ -3,7 +3,9 @@ import importData from "../small_biz_data.js";
 import { LoadScript } from "@react-google-maps/api";
 import Maps from "../components/Maps.js";
 
-export default function Detail() {
+export default function Detail(props) {
+  const businessId = props.match.params.id;
+  //filter
   return (
     <div>
       <LoadScript googleMapsApiKey="AIzaSyCJcaWh6K9_P0Ey23amRDsuT7_zRo7vy9w">
